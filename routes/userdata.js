@@ -13,7 +13,7 @@ router.post('/', async function(req, res) {
     client.close();
     res.status(200).json({
       message: `User Registered`
-    })  c
+    }) 
   } catch (error) { 
     if(client) client.close();
     console.log(error);
